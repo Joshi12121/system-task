@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Edit Load Template</title>
+<style>
+
+.container 
+{
+border: 1px solid #000; 
+padding: 15px;         
+width: 100%;            
+box-sizing: border-box; 
+}
+
+.input-group 
+{
+display: flex;
+gap: 15px;
+}
+
+.input-group 
+{
+display: flex;
+gap: 15px;
+}
+
+.input-group 
+{
+flex: 1;
+}
+
+.input-group input, .input-group textarea
+{
+width: 100%;
+border: 1px solid #000;
+padding: 5px;
+}
+
+.input-group textarea 
+{
+height: 50px;
+}
+</style>
+</head>
+<body>
+
+<div>
+<div>
+Home > 
+<a href="maintain_load_request_template.html">Maintain Load Request Template</a> > 
+Edit Load Template
+</div>
+
+<h2>Edit Load Template</h2>
+
+<form action="/submit-template" method="post">
+
+<div class="container">
+<div class="input-group">
+<div>
+<label for="template-name">Template Name</label><br>
+<input type="text" id="template-name" name="template_name" placeholder="Enter Name"><br><br>
+</div>
+
+<div>
+<label for="template-description">Description</label><br>
+<textarea id="template-description" name="template_description" placeholder="Enter Template Description" style="border: 1px solid #000; padding: 25px; width: 400%;" ></textarea><br><br>
+</div>
+</div>
+</div>
+
+<h3>Model Quantity for Load Template Items</h3>
+
+<div style="margin-bottom: 15px;">
+<input type="text" id="search" name="search" placeholder="Search..." style="padding: 5px; width: calc(90% - 660px); display: inline-block;"/>
+<button type="button" onclick="alert('Search functionality not implemented')" style="padding: 4px; display: inline-block;">🔍</button>
+<a href="Add_product.html" target="_blank">
+<button type="button">Add Product</button>
+</a>
+</div>
+
+
+<table border="1" cellpadding="5" cellspacing="1" style="width: 100%; border-collapse: collapse;">
+
+<thead>
+
+<tr>
+<th>Select</th>
+<th>SKU Code</th>
+<th style="width:70%">SKU Name</th>
+<th>UOM</th>
+<th>Mon (Qty)</th>
+<th>Tue (Qty)</th>
+<th>Wed (Qty)</th>
+<th>Thu (Qty)</th>
+<th>Fri (Qty)</th>
+<th>Sat (Qty)</th>
+<th>Sun (Qty)</th>
+<th>Sum (Qty)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><input type="checkbox" name="select_1"></td>
+<td>3005408</td>
+<td>Arc Fresh Dairy White Milk Blue 3L BOT</td>
+<td>
+
+<select name="uom_1">
+<option value="OU">OU</option>
+<option value="OM">OM</option>
+</select>
+</td>
+<td><input type="number" name="mon_qty_1" value="0"></td>
+<td><input type="number" name="tue_qty_1" value="0"></td>
+<td><input type="number" name="wed_qty_1" value="0"></td>
+<td><input type="number" name="thu_qty_1" value="0"></td>
+<td><input type="number" name="fri_qty_1" value="0"></td>
+<td><input type="number" name="sat_qty_1" value="0"></td>
+<td><input type="number" name="sun_qty_1" value="0"></td>
+<td>0</td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="select_2"></td>
+<td>3005405</td>
+<td>Arc Fresh Dairy White Milk Blue 2L BOT</td>
+<td>
+
+<select name="uom_2">
+<option value="OU">OU</option>
+<option value="OM">OM</option>
+</select>
+</td>
+
+<td><input type="number" name="mon_qty_2" value="0"></td>                 
+<td><input type="number" name="tue_qty_2" value="0"></td>
+<td><input type="number" name="wed_qty_2" value="0"></td> 
+<td><input type="number" name="thu_qty_2" value="0"></td>
+<td><input type="number" name="fri_qty_2" value="0"></td>
+<td><input type="number" name="sat_qty_2" value="0"></td>
+<td><input type="number" name="sun_qty_2" value="0"></td>
+<td>0</td>
+</tr>
+
+</tbody>
+</table>
+
+<div style="margin-top: 15px; text-align: center;">
+<button type="button" onclick="history.back()">Back</button>
+<button type="button" onclick="alert('Delete Selected Items')">Delete Selected</button>
+<button type="submit">Save</button>
+</div>
+
+</form>
+</div>
+<div style="position: fixed; bottom: 8px; right: 10px;">
+    <a href="page2.html" style="text-decoration: none; font-size: 24px;"><</a>
+<span style="font-size: 18px; margin: 0 10px;">2</span>
+    <a href="page1.html" style="text-decoration: none; font-size: 24px;">></a> 
+</div>
+
+
+</body>
+</html>

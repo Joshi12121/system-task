@@ -1,1 +1,10 @@
+CREATE DATABASE product_db;
+USE product_db;
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sku_code VARCHAR(255) NOT NULL UNIQUE,
+    sku_name VARCHAR(255) NOT NULL
+);
+SHOW TABLES;
+DESCRIBE products;
 

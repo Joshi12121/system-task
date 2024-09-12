@@ -1,1 +1,3 @@
-venv\Scripts\activate
+git add requirements.txt
+git commit -m "Update requirements.txt"
+git push
